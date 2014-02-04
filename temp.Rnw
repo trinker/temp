@@ -1,0 +1,13 @@
+\documentclass{article} 
+
+\begin{document} 
+
+\begin{figure} 
+<<fig1,eval=TRUE,echo=FALSE,dev='tikz'>>= 
+library(ggplot2)
+library(tikzDevice)
+qplot(displ, hwy, data = mpg, colour = factor(cyl)) 
+@ 
+\end{figure} 
+
+\end{document}
